@@ -1,0 +1,25 @@
+Step 1. Start
+
+Step 2. Define function as f(x)
+
+Step 3. Input initial guesses (x0 and x1),
+   tolerable error (e) and maximum iteration (N)
+
+Step 4. Initialize iteration counter i = 1
+
+Step 5. If f(x0) = f(x1) then print "Mathematical Error" 
+   and goto (11) otherwise goto (6) 
+
+Step 6. Calcualte x2 = x1 - (x1-x0) * f(x1) / ( f(x1) - f(x0) )
+
+Step 7. Increment iteration counter i = i + 1
+
+Step 8. If i >= N then print "Not Convergent" 
+   and goto (11) otherwise goto (9) 
+
+Step 9. If |f(x2)| > e then set x0 = x1, x1 = x2 
+   and goto (5) otherwise goto (10)
+
+Step 10. Print root as x2
+
+Step 11. Stop

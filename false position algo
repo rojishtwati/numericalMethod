@@ -1,1 +1,21 @@
+Step-1:	Find points x0 and x1 such that x0<x1 and f(x0)⋅f(x1)<0.
+Step-2:	Take the interval [x0,x1] and
+        find next value using
+      Formula-1 : x2=x0-f(x0)⋅
+    x1-x0
+    f(x1)-f(x0)
+ 
 
+      or Formula-2 : x2=
+        x0⋅f(x1)-x1⋅f(x0)
+      f(x1)-f(x0)
+ 
+
+        or Formula-3 : x2=x1-f(x1)⋅
+          x1-x0
+          f(x1)-f(x0)
+        (Using any of the formula, you will get same x2 value)
+Step-3:	If f(x2)=0 then x2 is an exact root,
+          else if f(x0)⋅f(x2)<0 then x1=x2,
+            else if f(x2)⋅f(x1)<0 then x0=x2.
+Step-4:	Repeat steps 2 & 3 until f(xi)=0 or |f(xi)|≤Accuracy
